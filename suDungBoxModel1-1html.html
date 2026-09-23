@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập Sử dụng Box Model 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Thẻ thứ nhất: content-box -->
+    <div class="card">
+      <h3>Thẻ 1 (content-box)</h3>
+      <p>
+        Thẻ này sử dụng box-sizing: content-box. Kích thước thực tế sẽ bị cộng
+        thêm padding và border.
+      </p>
+    </div>
+
+    <!-- Thẻ thứ hai: border-box -->
+    <div class="card">
+      <h3>Thẻ 2 (border-box)</h3>
+      <p>
+        Thẻ này sử dụng box-sizing: border-box. Kích thước tổng thể vẫn giữ
+        nguyên 280px x 150px.
+      </p>
+    </div>
+
+    <!-- Thẻ thứ ba: border-box -->
+    <div class="card">
+      <h3>Thẻ 3 (border-box)</h3>
+      <p>Thẻ này cũng sử dụng box-sizing: border-box với màu nền đỏ.</p>
+    </div>
+  </body>
+</html>
