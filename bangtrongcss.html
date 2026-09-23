@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thực hành Bảng trong CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      /* 1. Thiết lập chiều rộng 100% và gộp đường viền đôi thành đơn (border-collapse) */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      /* 2. Đường viền, padding và canh lề chung cho th và td */
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+      }
+
+      /* 3. Chiều cao, màu nền, màu chữ và canh trái cho hàng tiêu đề (th) */
+      th {
+        height: 50px;
+        background-color: #04aa6d;
+        color: white;
+        text-align: left; /* Căn chỉnh theo chiều ngang */
+      }
+
+      /* 4. Căn chỉnh theo chiều dọc (vertical-align) cho dữ liệu bảng */
+      td {
+        vertical-align: bottom; /* Đặt văn bản nằm sát phía dưới */
+      }
+
+      /* 5. Hiệu ứng tô màu xen kẽ cho các dòng (Zebra Striping) */
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      /* Hiệu ứng khi rê chuột vào hàng */
+      tr:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Danh sách nhân viên (Thực hành CSS Table)</h2>
+
+    <table>
+      <tr>
+        <th>Họ và Tên</th>
+        <th>Chức vụ</th>
+        <th>Phòng ban</th>
+        <th>Lương</th>
+      </tr>
+      <tr>
+        <td>Nguyễn Văn A</td>
+        <td>Lập trình viên Frontend</td>
+        <td>Kỹ thuật</td>
+        <td>15.000.000 VNĐ</td>
+      </tr>
+      <tr>
+        <td>Trần Thị B</td>
+        <td>Chuyên viên Marketing</td>
+        <td>Truyền thông</td>
+        <td>12.500.000 VNĐ</td>
+      </tr>
+      <tr>
+        <td>Lê Văn C</td>
+        <td>Quản lý dự án (PM)</td>
+        <td>Quản lý</td>
+        <td>25.000.000 VNĐ</td>
+      </tr>
+      <tr>
+        <td>Phạm Thị D</td>
+        <td>Thiết kế UI/UX</td>
+        <td>Sáng tạo</td>
+        <td>14.000.000 VNĐ</td>
+      </tr>
+    </table>
+  </body>
+</html>
