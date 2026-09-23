@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h3 {
+  margin: 20px 0 10px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Định dạng các ô item */
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Ví dụ 1: 3 cột có độ rộng 150px mỗi cột */
+.grid-1 {
+  grid-template-columns: 150px 150px 150px;
+}
+
+/* Ví dụ 2: Cột ở giữa rộng gấp đôi 2 cột còn lại (1fr 2fr 1fr) */
+.grid-2 {
+  grid-template-columns: 1fr 2fr 1fr;
+}
