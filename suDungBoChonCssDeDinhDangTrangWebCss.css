@@ -1,0 +1,57 @@
+/* 1. Đổi màu nền của trang (Element selector) */
+[cite: 1] body {
+  background-color: #f4f6f9;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* 2. Căn giữa tiêu đề h1 (ID selector) */
+[cite: 1] #main-title {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Định dạng đoạn văn (Class selector) */
+.description {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+/* 3. Định dạng danh sách với màu sắc khác nhau (Grouping / Pseudo-classes) */
+[cite: 1] .hobby-list {
+  list-style-type: square;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.hobby-list li:nth-child(1) {
+  color: #e74c3c; /* Màu đỏ cho sở thích 1 */
+}
+
+.hobby-list li:nth-child(2) {
+  color: #2ecc71; /* Màu xanh lá cho sở thích 2 */
+}
+
+.hobby-list li:nth-child(3) {
+  color: #3498db; /* Màu xanh dương cho sở thích 3 */
+}
+
+/* 4. Định dạng nút bấm và hiệu ứng hover (Pseudo-class hover) */
+[cite: 1] .btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect cho nút bấm */
+[cite: 1] .btn:hover {
+  background-color: #0056b3;
+}
