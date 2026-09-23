@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thực hành Danh sách trong CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+
+      /* 1. Định dạng danh sách không có thứ tự (ul) với kiểu dấu tròn rỗng */
+      ul.circle-list {
+        list-style-type: circle;
+      }
+
+      /* 2. Định dạng danh sách không có thứ tự với kiểu hình vuông (square) */
+      ul.square-list {
+        list-style-type: square;
+      }
+
+      /* 3. Định dạng danh sách có thứ tự (ol) với chữ số La Mã hoa */
+      ol.roman-list {
+        list-style-type: upper-roman;
+      }
+
+      /* 4. Định dạng danh sách có thứ tự với chữ cái thường */
+      ol.alpha-list {
+        list-style-type: lower-alpha;
+      }
+
+      /* 5. Định dạng vị trí dấu mốc nằm bên trong dòng (inside) */
+      ul.inside-list {
+        list-style-position: inside;
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+
+      /* 6. Danh sách kết hợp màu sắc */
+      ol.colored-list {
+        background-color: #ffeaea;
+        padding: 20px;
+      }
+      ol.colored-list li {
+        color: #d9534f;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thực hành Danh sách trong CSS</h1>
+
+    <h2>1. Danh sách không có thứ tự (ul)</h2>
+    <h3>Kiểu Circle:</h3>
+    <ul class="circle-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <h3>Kiểu Square:</h3>
+    <ul class="square-list">
+      <li>Bootstrap</li>
+      <li>ReactJS</li>
+      <li>VueJS</li>
+    </ul>
+
+    <h2>2. Danh sách có thứ tự (ol)</h2>
+    <h3>Kiểu La Mã (Upper Roman):</h3>
+    <ol class="roman-list">
+      <li>Bước 1: Chuẩn bị giao diện</li>
+      <li>Bước 2: Viết mã HTML</li>
+      <li>Bước 3: Định dạng CSS</li>
+    </ol>
+
+    <h3>Kiểu Chữ cái (Lower Alpha):</h3>
+    <ol class="alpha-list">
+      <li>Mục A</li>
+      <li>Mục B</li>
+      <li>Mục C</li>
+    </ol>
+
+    <h2>3. Vị trí đánh dấu mục (list-style-position: inside)</h2>
+    <ul class="inside-list">
+      <li>Phần tử 1 nằm bên trong lề</li>
+      <li>Phần tử 2 nằm bên trong lề</li>
+    </ul>
+
+    <h2>4. Kiểu danh sách có màu sắc</h2>
+    <ol class="colored-list">
+      <li>Mục danh sách màu đỏ 1</li>
+      <li>Mục danh sách màu đỏ 2</li>
+    </ol>
+  </body>
+</html>
