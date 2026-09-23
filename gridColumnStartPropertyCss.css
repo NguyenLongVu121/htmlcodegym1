@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h3 {
+  margin: 20px 0 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Item 1 bắt đầu hiển thị ở đường kẻ cột thứ 2 */
+.item1 {
+  grid-column-start: 2;
+}
+
+/* Item 2 kéo dài chiếm 2 cột bằng từ khóa span */
+.item2 {
+  grid-column-start: span 2;
+}
