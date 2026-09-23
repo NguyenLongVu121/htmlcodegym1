@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Mặc định cho màn hình lớn (> 700px): Hiển thị 4 ảnh / dòng (mỗi ảnh chiếm 25%) */
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  margin-bottom: 15px;
+}
+
+.img-box {
+  border: 1px solid #ccc;
+}
+
+.img-box:hover {
+  border: 1px solid #777;
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Khi màn hình <= 700px: Hiển thị 2 ảnh / dòng (mỗi ảnh chiếm 50%) */
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+/* Khi màn hình <= 500px: Hiển thị 1 ảnh / dòng (mỗi ảnh chiếm 100%) */
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
