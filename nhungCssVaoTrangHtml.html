@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài tập Nhúng CSS vào trang HTML</title>
+
+    <!-- Phần 3: Liên kết với file CSS bên ngoài (External CSS) -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Phần 2: Sử dụng Internal-style (CSS nội bộ) -->
+    <style>
+      .internal-title {
+        color: blue;
+      }
+
+      .internal-text {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thực hành 3 phương pháp Nhúng CSS vào HTML</h1>
+
+    <hr />
+
+    <!-- PHẦN 1: Thay đổi màu sắc sử dụng Inline-style -->
+    <section>
+      <h2 style="color: orange">Phần 1: Inline-style (Tiêu đề màu cam)</h2>
+      <p style="color: darkcyan">
+        Đoạn văn này được đổi màu bằng thuộc tính inline-style viết trực tiếp
+        trong thẻ HTML.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- PHẦN 2: Thay đổi màu sắc sử dụng Internal-style -->
+    <section>
+      <h2 class="internal-title">
+        Phần 2: Internal-style (Tiêu đề màu xanh dương)
+      </h2>
+      <p class="internal-text">
+        Đoạn văn này được đổi màu bằng Internal-style khai báo trong thẻ style ở
+        phần head.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- PHẦN 3: Thay đổi màu sắc sử dụng External-style -->
+    <section>
+      <h2 class="external-title">Phần 3: External-style (Tiêu đề màu đỏ)</h2>
+      <p class="external-text">
+        Đoạn văn này được đổi màu bằng External-style lấy từ file style.css bên
+        ngoài.
+      </p>
+    </section>
+  </body>
+</html>
