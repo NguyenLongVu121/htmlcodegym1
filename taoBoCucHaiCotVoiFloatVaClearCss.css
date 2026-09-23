@@ -1,0 +1,30 @@
+/* Container bao bọc toàn bộ bố cục */
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Cột bên trái chiếm 60% */
+.left-column {
+  width: 60%;
+  float: left;
+  background-color: lightblue;
+  padding: 20px;
+  box-sizing: border-box; /* Giúp padding không làm tràn chiều rộng */
+}
+
+/* Cột bên phải chiếm 38% */
+.right-column {
+  width: 38%;
+  float: right;
+  background-color: lightgreen;
+  padding: 20px;
+  box-sizing: border-box; /* Giúp padding không làm tràn chiều rộng */
+}
+
+/* Xử lý float bằng pseudo-element ::after */
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
