@@ -1,0 +1,43 @@
+/* Thiết lập màu nền (background-color) cho trang web */
+body {
+    background-color: #eef2f5; /* Màu nền xám nhạt dịu mắt */[cite: 5]
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Kiểu dáng cho tiêu đề và đoạn văn ngoài div */
+h1 {
+    color: #2c3e50;
+}
+
+p {
+    color: #555;
+}
+
+/* Thêm ảnh nền (background-image) và căn giữa nội dung trong khối <div> */
+.content-box {
+    /* Đường dẫn ảnh nền trực tuyến minh họa (bạn có thể thay bằng đường dẫn ảnh của bạn) */
+    background-image: url('https://picsum.photos/800/400');[cite: 5]
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Căn giữa khối div trên trang */
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 40px 20px;
+
+    /* Căn giữa nội dung bên trong khối div */
+    text-align: center;[cite: 5]
+
+    /* Trang trí thêm cho khối div đẹp mắt và rõ chữ */
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    /* Lớp phủ mờ giúp chữ dễ đọc hơn trên nền ảnh */
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
