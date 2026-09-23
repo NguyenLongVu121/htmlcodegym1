@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Định dạng Header */
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Định dạng Navigation Bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Tạo layout 3 cột dạng Flexbox */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  padding: 20px;
+}
+
+/* 2 cột sidebar bên cạnh chiếm 25% */
+.column.side {
+  flex: 25%;
+  background-color: #f4f4f4;
+}
+
+/* Cột chính ở giữa chiếm 50% */
+.column.middle {
+  flex: 50%;
+  background-color: #fff;
+}
+
+/* Định dạng Footer */
+.footer {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive cho màn hình nhỏ (Mobile max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
